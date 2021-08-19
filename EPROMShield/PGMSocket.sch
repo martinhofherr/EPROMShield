@@ -1,0 +1,688 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 616FB637
+P 4950 5550
+F 0 "#PWR?" H 4950 5300 50  0001 C CNN
+F 1 "GND" H 4955 5377 50  0000 C CNN
+F 2 "" H 4950 5550 50  0001 C CNN
+F 3 "" H 4950 5550 50  0001 C CNN
+	1    4950 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5550 4950 5400
+Wire Wire Line
+	4950 5400 5050 5400
+$Comp
+L Connector_Generic:Conn_02x16_Counter_Clockwise J?
+U 1 1 616FB63F
+P 5250 4600
+F 0 "J?" H 5300 5517 50  0000 C CNN
+F 1 "Conn_02x16_Counter_Clockwise" H 5300 5426 50  0000 C CNN
+F 2 "" H 5250 4600 50  0001 C CNN
+F 3 "~" H 5250 4600 50  0001 C CNN
+	1    5250 4600
+	1    0    0    -1  
+$EndComp
+Text Label 4550 3900 0    50   ~ 0
+VPP1
+Text Label 6050 4700 2    50   ~ 0
+VPP2nG
+Text Label 6050 4100 2    50   ~ 0
+VCC2A17
+Wire Wire Line
+	5050 5300 4600 5300
+Wire Wire Line
+	5050 4900 4600 4900
+Wire Wire Line
+	5050 4800 4600 4800
+Wire Wire Line
+	5050 4700 4600 4700
+Wire Wire Line
+	5050 4600 4600 4600
+Wire Wire Line
+	5050 4500 4600 4500
+Wire Wire Line
+	5050 4400 4600 4400
+Wire Wire Line
+	5050 4300 4600 4300
+Wire Wire Line
+	5050 4200 4600 4200
+Wire Wire Line
+	5050 4100 4600 4100
+Wire Wire Line
+	5050 4000 4600 4000
+Text Label 4600 5300 0    50   ~ 0
+Q2
+Text Label 4600 5200 0    50   ~ 0
+Q1
+Text Label 4600 5100 0    50   ~ 0
+Q0
+Text Label 4600 5000 0    50   ~ 0
+A0
+Text Label 4600 4900 0    50   ~ 0
+A1
+Text Label 4600 4800 0    50   ~ 0
+A2
+Text Label 4600 4700 0    50   ~ 0
+A3
+Text Label 4600 4600 0    50   ~ 0
+A4
+Text Label 4600 4500 0    50   ~ 0
+A5
+Text Label 4600 4400 0    50   ~ 0
+A6
+Text Label 4600 4300 0    50   ~ 0
+A7
+Text Label 4600 4200 0    50   ~ 0
+A12
+Text Label 4600 4100 0    50   ~ 0
+A15
+Text Label 4600 4000 0    50   ~ 0
+A16
+Wire Wire Line
+	5550 5400 6050 5400
+Wire Wire Line
+	5550 5300 6050 5300
+Wire Wire Line
+	5550 5200 6050 5200
+Wire Wire Line
+	5550 5100 6050 5100
+Wire Wire Line
+	5550 5000 6050 5000
+Wire Wire Line
+	5550 4900 6050 4900
+Wire Wire Line
+	5550 4800 6050 4800
+Text Label 6050 5400 2    50   ~ 0
+Q3
+Text Label 6050 5300 2    50   ~ 0
+Q4
+Text Label 6050 5200 2    50   ~ 0
+Q5
+Text Label 6050 5100 2    50   ~ 0
+Q6
+Text Label 6050 5000 2    50   ~ 0
+Q7
+Text Label 6050 4900 2    50   ~ 0
+nE
+Text Label 6050 4800 2    50   ~ 0
+A10
+Wire Wire Line
+	5550 4600 6050 4600
+Wire Wire Line
+	5550 4500 6050 4500
+Wire Wire Line
+	5550 4400 6050 4400
+Wire Wire Line
+	5550 4300 6050 4300
+Wire Wire Line
+	5550 4200 6050 4200
+Wire Wire Line
+	5550 4000 6050 4000
+Wire Wire Line
+	5550 3900 6050 3900
+Text Label 6050 4600 2    50   ~ 0
+A11
+Text Label 6050 4500 2    50   ~ 0
+A9
+Text Label 6050 4400 2    50   ~ 0
+A8
+Text Label 6050 4300 2    50   ~ 0
+A13
+Text Label 6050 4200 2    50   ~ 0
+A14
+Text Label 6050 4000 2    50   ~ 0
+nP
+Text Label 6050 3900 2    50   ~ 0
+VCC1
+$Comp
+L Transistor_FET:BSS83P Q?
+U 1 1 616FB680
+P 3650 3600
+F 0 "Q?" H 3854 3554 50  0000 L CNN
+F 1 "BSS83P" H 3854 3645 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3850 3525 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1835997.pdf" H 3650 3600 50  0001 L CNN
+	1    3650 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 616FB686
+P 3350 3900
+F 0 "Q?" H 3541 3946 50  0000 L CNN
+F 1 "BC847" H 3541 3855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 3825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3350 3900 50  0001 L CNN
+	1    3350 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3600 3450 3700
+$Comp
+L Device:R R?
+U 1 1 616FB68D
+P 3450 3300
+F 0 "R?" H 3520 3346 50  0000 L CNN
+F 1 "R" H 3520 3255 50  0000 L CNN
+F 2 "" V 3380 3300 50  0001 C CNN
+F 3 "~" H 3450 3300 50  0001 C CNN
+	1    3450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3450 3450 3600
+Connection ~ 3450 3600
+Wire Wire Line
+	3750 3400 3750 3050
+Wire Wire Line
+	3750 3050 3450 3050
+Wire Wire Line
+	3450 3050 3450 3150
+$Comp
+L power:GND #PWR?
+U 1 1 616FB698
+P 3450 4350
+AR Path="/616FB698" Ref="#PWR?"  Part="1" 
+AR Path="/616D4E88/616FB698" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3450 4100 50  0001 C CNN
+F 1 "GND" H 3455 4177 50  0000 C CNN
+F 2 "" H 3450 4350 50  0001 C CNN
+F 3 "" H 3450 4350 50  0001 C CNN
+	1    3450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4100 3450 4350
+$Comp
+L Device:R R?
+U 1 1 616FB69F
+P 2950 3900
+AR Path="/616FB69F" Ref="R?"  Part="1" 
+AR Path="/616D4E88/616FB69F" Ref="R?"  Part="1" 
+F 0 "R?" V 2743 3900 50  0000 C CNN
+F 1 "R" V 2834 3900 50  0000 C CNN
+F 2 "" V 2880 3900 50  0001 C CNN
+F 3 "~" H 2950 3900 50  0001 C CNN
+	1    2950 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 3900 3150 3900
+Wire Wire Line
+	2800 3900 2550 3900
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 616FB6A8
+P 7300 5350
+F 0 "Q?" H 7504 5396 50  0000 L CNN
+F 1 "BSS138" H 7504 5305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7500 5275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 7300 5350 50  0001 L CNN
+	1    7300 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS83P Q?
+U 1 1 616FB6AE
+P 7300 4400
+F 0 "Q?" H 7504 4354 50  0000 L CNN
+F 1 "BSS83P" H 7504 4445 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7500 4325 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1835997.pdf" H 7300 4400 50  0001 L CNN
+	1    7300 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 4600 7200 4700
+Wire Wire Line
+	7200 4700 6700 4700
+$Comp
+L Diode:BAS19 D?
+U 1 1 616FB6B6
+P 6550 3950
+F 0 "D?" V 6600 4100 50  0000 R CNN
+F 1 "BAS19" V 6500 4250 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 3775 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/Ds12004.pdf" H 6550 3950 50  0001 C CNN
+	1    6550 3950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6550 4450 6550 4700
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 616FB6BD
+P 7750 4600
+F 0 "Q?" H 7941 4646 50  0000 L CNN
+F 1 "BC847" H 7941 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7950 4525 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 7750 4600 50  0001 L CNN
+	1    7750 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4400 7500 4400
+$Comp
+L Device:R R?
+U 1 1 616FB6C4
+P 7650 4200
+F 0 "R?" H 7720 4246 50  0000 L CNN
+F 1 "1k" H 7720 4155 50  0000 L CNN
+F 2 "" V 7580 4200 50  0001 C CNN
+F 3 "~" H 7650 4200 50  0001 C CNN
+	1    7650 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4350 7650 4400
+Connection ~ 7650 4400
+Wire Wire Line
+	7650 4050 7650 3900
+Wire Wire Line
+	7650 3900 7200 3900
+Wire Wire Line
+	7200 3900 7200 4200
+Connection ~ 7200 3900
+$Comp
+L power:GND #PWR?
+U 1 1 616FB6D0
+P 7650 4850
+F 0 "#PWR?" H 7650 4600 50  0001 C CNN
+F 1 "GND" H 7655 4677 50  0000 C CNN
+F 2 "" H 7650 4850 50  0001 C CNN
+F 3 "" H 7650 4850 50  0001 C CNN
+	1    7650 4850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4800 7650 4850
+$Comp
+L power:GND #PWR?
+U 1 1 616FB6D7
+P 7200 5750
+F 0 "#PWR?" H 7200 5500 50  0001 C CNN
+F 1 "GND" H 7205 5577 50  0000 C CNN
+F 2 "" H 7200 5750 50  0001 C CNN
+F 3 "" H 7200 5750 50  0001 C CNN
+	1    7200 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616FB6DD
+P 8200 4600
+F 0 "R?" H 8270 4646 50  0000 L CNN
+F 1 "4k7" H 8270 4555 50  0000 L CNN
+F 2 "" V 8130 4600 50  0001 C CNN
+F 3 "~" H 8200 4600 50  0001 C CNN
+	1    8200 4600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8050 4600 7950 4600
+$Comp
+L power:VPP #PWR?
+U 1 1 616FB6E4
+P 3450 2850
+AR Path="/616FB6E4" Ref="#PWR?"  Part="1" 
+AR Path="/616D4E88/616FB6E4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3450 2700 50  0001 C CNN
+F 1 "VPP" H 3465 3023 50  0000 C CNN
+F 2 "" H 3450 2850 50  0001 C CNN
+F 3 "" H 3450 2850 50  0001 C CNN
+	1    3450 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2850 3450 3050
+Connection ~ 3450 3050
+$Comp
+L power:VPP #PWR?
+U 1 1 616FB6EC
+P 7200 3750
+F 0 "#PWR?" H 7200 3600 50  0001 C CNN
+F 1 "VPP" H 7215 3923 50  0000 C CNN
+F 2 "" H 7200 3750 50  0001 C CNN
+F 3 "" H 7200 3750 50  0001 C CNN
+	1    7200 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3750 7200 3900
+Wire Wire Line
+	5550 4700 6550 4700
+Connection ~ 6550 4700
+$Comp
+L Device:R R?
+U 1 1 616FB6F5
+P 7800 5550
+F 0 "R?" H 7870 5596 50  0000 L CNN
+F 1 "1k" H 7870 5505 50  0000 L CNN
+F 2 "" V 7730 5550 50  0001 C CNN
+F 3 "~" H 7800 5550 50  0001 C CNN
+	1    7800 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5350 7800 5400
+Wire Wire Line
+	7500 5350 7800 5350
+$Comp
+L power:GND #PWR?
+U 1 1 616FB6FD
+P 7800 5750
+F 0 "#PWR?" H 7800 5500 50  0001 C CNN
+F 1 "GND" H 7805 5577 50  0000 C CNN
+F 2 "" H 7800 5750 50  0001 C CNN
+F 3 "" H 7800 5750 50  0001 C CNN
+	1    7800 5750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5700 7800 5750
+Wire Wire Line
+	7800 5350 8100 5350
+Connection ~ 7800 5350
+$Comp
+L power:VCC #PWR?
+U 1 1 616FB707
+P 6550 3750
+F 0 "#PWR?" H 6550 3600 50  0001 C CNN
+F 1 "VCC" H 6565 3923 50  0000 C CNN
+F 2 "" H 6550 3750 50  0001 C CNN
+F 3 "" H 6550 3750 50  0001 C CNN
+	1    6550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5550 7200 5750
+$Comp
+L Device:R R?
+U 1 1 616FB70E
+P 7200 4900
+F 0 "R?" H 7270 4946 50  0000 L CNN
+F 1 "1k5" H 7270 4855 50  0000 L CNN
+F 2 "" V 7130 4900 50  0001 C CNN
+F 3 "~" H 7200 4900 50  0001 C CNN
+	1    7200 4900
+	-1   0    0    -1  
+$EndComp
+Connection ~ 7200 4700
+Wire Wire Line
+	7200 4750 7200 4700
+Wire Wire Line
+	7200 5050 7200 5150
+$Comp
+L 74xGxx:74AHC1G04 U?
+U 1 1 616FB717
+P 7600 3150
+F 0 "U?" H 7575 3417 50  0000 C CNN
+F 1 "74AHC1G04" H 7575 3326 50  0000 C CNN
+F 2 "" H 7600 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7600 3150 50  0001 C CNN
+	1    7600 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 616FB71D
+P 6750 1550
+AR Path="/616FB71D" Ref="#PWR?"  Part="1" 
+AR Path="/616D4E88/616FB71D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6750 1400 50  0001 C CNN
+F 1 "VCC" H 6765 1723 50  0000 C CNN
+F 2 "" H 6750 1550 50  0001 C CNN
+F 3 "" H 6750 1550 50  0001 C CNN
+	1    6750 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1650 6750 2100
+Connection ~ 6750 1650
+Wire Wire Line
+	7250 1650 7250 1850
+$Comp
+L power:GND #PWR?
+U 1 1 616FB726
+P 7250 2850
+F 0 "#PWR?" H 7250 2600 50  0001 C CNN
+F 1 "GND" H 7255 2677 50  0000 C CNN
+F 2 "" H 7250 2850 50  0001 C CNN
+F 3 "" H 7250 2850 50  0001 C CNN
+	1    7250 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2500 8300 2500
+Wire Wire Line
+	7550 2500 7750 2500
+$Comp
+L Device:R R?
+U 1 1 616FB72E
+P 7900 2500
+F 0 "R?" H 7970 2546 50  0000 L CNN
+F 1 "4k7" H 7970 2455 50  0000 L CNN
+F 2 "" V 7830 2500 50  0001 C CNN
+F 3 "~" H 7900 2500 50  0001 C CNN
+	1    7900 2500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7250 2700 7250 2850
+Wire Wire Line
+	7050 2300 7250 2300
+Wire Wire Line
+	7250 2150 7250 2300
+Connection ~ 7250 2300
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 616FB738
+P 7350 2500
+F 0 "Q?" H 7541 2546 50  0000 L CNN
+F 1 "BC847" H 7541 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7550 2425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 7350 2500 50  0001 L CNN
+	1    7350 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616FB73E
+P 7250 2000
+F 0 "R?" H 7320 2046 50  0000 L CNN
+F 1 "1k" H 7320 1955 50  0000 L CNN
+F 2 "" V 7180 2000 50  0001 C CNN
+F 3 "~" H 7250 2000 50  0001 C CNN
+	1    7250 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS83P Q?
+U 1 1 616FB744
+P 6850 2300
+F 0 "Q?" H 7054 2254 50  0000 L CNN
+F 1 "BSS83P" H 7054 2345 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7050 2225 50  0001 L CIN
+F 3 "http://www.farnell.com/datasheets/1835997.pdf" H 6850 2300 50  0001 L CNN
+	1    6850 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 1550 6750 1650
+Wire Wire Line
+	6750 1650 7250 1650
+$Comp
+L Device:R R?
+U 1 1 616FB74C
+P 7050 3150
+F 0 "R?" H 7120 3196 50  0000 L CNN
+F 1 "1k" H 7120 3105 50  0000 L CNN
+F 2 "" V 6980 3150 50  0001 C CNN
+F 3 "~" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7200 3150 7350 3150
+Wire Wire Line
+	6900 3150 6750 3150
+Wire Wire Line
+	6750 2500 6750 3150
+Connection ~ 6750 3150
+$Comp
+L Device:R R?
+U 1 1 616FB756
+P 6550 4300
+F 0 "R?" H 6620 4346 50  0000 L CNN
+F 1 "15k" H 6620 4255 50  0000 L CNN
+F 2 "" V 6480 4300 50  0001 C CNN
+F 3 "~" H 6550 4300 50  0001 C CNN
+	1    6550 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3800 6550 3750
+Wire Wire Line
+	6550 4100 6550 4150
+Wire Wire Line
+	6400 4100 6400 3150
+Wire Wire Line
+	5550 4100 6400 4100
+Wire Wire Line
+	6400 3150 6750 3150
+Wire Wire Line
+	3750 3800 3750 3900
+Wire Wire Line
+	3750 3900 5050 3900
+Wire Wire Line
+	8350 4600 8500 4600
+Wire Wire Line
+	7900 3150 8300 3150
+$Comp
+L power:VCC #PWR?
+U 1 1 616FB765
+P 7600 2850
+F 0 "#PWR?" H 7600 2700 50  0001 C CNN
+F 1 "VCC" H 7615 3023 50  0000 C CNN
+F 2 "" H 7600 2850 50  0001 C CNN
+F 3 "" H 7600 2850 50  0001 C CNN
+	1    7600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2850 7600 3050
+Wire Wire Line
+	7600 3250 7600 3450
+$Comp
+L power:GND #PWR?
+U 1 1 616FB76D
+P 7600 3450
+F 0 "#PWR?" H 7600 3200 50  0001 C CNN
+F 1 "GND" H 7605 3277 50  0000 C CNN
+F 2 "" H 7600 3450 50  0001 C CNN
+F 3 "" H 7600 3450 50  0001 C CNN
+	1    7600 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 616FB773
+P 6700 4650
+F 0 "TP?" H 6758 4768 50  0000 L CNN
+F 1 "TestPoint" H 6758 4677 50  0000 L CNN
+F 2 "" H 6900 4650 50  0001 C CNN
+F 3 "~" H 6900 4650 50  0001 C CNN
+	1    6700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4650 6700 4700
+Connection ~ 6700 4700
+Wire Wire Line
+	6700 4700 6550 4700
+$Comp
+L Connector:TestPoint TP?
+U 1 1 616FB77C
+P 6400 3000
+F 0 "TP?" H 6458 3118 50  0000 L CNN
+F 1 "TestPoint" H 6458 3027 50  0000 L CNN
+F 2 "" H 6600 3000 50  0001 C CNN
+F 3 "~" H 6600 3000 50  0001 C CNN
+	1    6400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3000 6400 3150
+Connection ~ 6400 3150
+Text HLabel 3350 850  0    50   Input ~ 0
+VCC
+Text HLabel 4050 850  0    50   Input ~ 0
+VPP
+Text HLabel 2550 3900 0    50   Input ~ 0
+VPP1_EN
+Text HLabel 8300 2500 2    50   Input ~ 0
+VCC2_EN
+Text HLabel 8300 3150 2    50   Input ~ 0
+A17
+Text HLabel 8500 4600 2    50   Input ~ 0
+VPP2_EN
+Text HLabel 8100 5350 2    50   Input ~ 0
+G_OE
+$Comp
+L power:VPP #PWR?
+U 1 1 61700804
+P 4250 750
+AR Path="/61700804" Ref="#PWR?"  Part="1" 
+AR Path="/616D4E88/61700804" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4250 600 50  0001 C CNN
+F 1 "VPP" H 4265 923 50  0000 C CNN
+F 2 "" H 4250 750 50  0001 C CNN
+F 3 "" H 4250 750 50  0001 C CNN
+	1    4250 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 850  4250 850 
+$Comp
+L power:VCC #PWR?
+U 1 1 617031C8
+P 3500 750
+AR Path="/617031C8" Ref="#PWR?"  Part="1" 
+AR Path="/616D4E88/617031C8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3500 600 50  0001 C CNN
+F 1 "VCC" H 3515 923 50  0000 C CNN
+F 2 "" H 3500 750 50  0001 C CNN
+F 3 "" H 3500 750 50  0001 C CNN
+	1    3500 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 850  3500 850 
+Wire Wire Line
+	3500 850  3500 750 
+Wire Wire Line
+	4250 750  4250 850 
+Wire Wire Line
+	4600 5200 5050 5200
+Wire Wire Line
+	4600 5100 5050 5100
+Wire Wire Line
+	4600 5000 5050 5000
+$EndSCHEMATC
