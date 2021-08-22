@@ -87,8 +87,6 @@ F 3 "" H 3550 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 2350 3550 2350
-Wire Wire Line
 	3550 2350 3550 2400
 $Comp
 L Regulator_Linear:LM317_TO-220 U?
@@ -719,8 +717,6 @@ F 3 "" H 1750 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 5900 1750 6100
-Wire Wire Line
 	1750 6400 1750 6600
 Text Notes 1000 6300 0    50   ~ 0
 Buffer Inverter
@@ -743,4 +739,12 @@ Text Notes 6050 3750 0    50   ~ 10
 Select between 5V and 6.25V supply for EPROM. 27Cxx EPROMs need 6.25V VCC during programming
 Text Notes 4650 2800 0    50   ~ 10
 12.75V
+Wire Wire Line
+	1750 5900 1750 6100
+Text Label 8700 1550 0    50   ~ 0
+VCC
+Text Label 8900 2950 0    50   ~ 10
+GND
+Wire Wire Line
+	3250 2350 3550 2350
 $EndSCHEMATC
