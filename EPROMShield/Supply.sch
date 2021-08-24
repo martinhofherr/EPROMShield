@@ -96,7 +96,7 @@ AR Path="/616623B5" Ref="U?"  Part="1"
 AR Path="/6162FE01/616623B5" Ref="U2"  Part="1" 
 F 0 "U2" H 7750 1792 50  0000 C CNN
 F 1 "LM317_TO-220" H 7750 1701 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7750 1800 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-220F-3_Horizontal_TabDown" H 7750 1800 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 7750 1550 50  0001 C CNN
 	1    7750 1550
 	1    0    0    -1  
@@ -362,7 +362,7 @@ AR Path="/61662438" Ref="D?"  Part="1"
 AR Path="/6162FE01/61662438" Ref="D6"  Part="1" 
 F 0 "D6" V 8250 1850 50  0000 L CNN
 F 1 "1N4001" V 8350 1650 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8300 1825 50  0001 C CNN
+F 2 "Diode_SMD:D_MELF" H 8300 1825 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8300 2000 50  0001 C CNN
 	1    8300 2000
 	0    1    1    0   
@@ -375,7 +375,7 @@ AR Path="/6166243E" Ref="D?"  Part="1"
 AR Path="/6162FE01/6166243E" Ref="D5"  Part="1" 
 F 0 "D5" H 7750 1317 50  0000 C CNN
 F 1 "1N4001" H 7750 1226 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7750 925 50  0001 C CNN
+F 2 "Diode_SMD:D_MELF" H 7750 925 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7750 1100 50  0001 C CNN
 	1    7750 1100
 	1    0    0    -1  

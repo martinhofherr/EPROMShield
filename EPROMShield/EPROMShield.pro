@@ -1,4 +1,4 @@
-update=22.08.2021 12:24:12
+update=22.08.2021 19:54:21
 version=1
 last_client=kicad
 [cvpcb]
@@ -36,6 +36,7 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
+TrackWidth2=0.75
 ViaDiameter1=0.6
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -247,6 +248,17 @@ dPairViaGap=0.25
 Name=Power
 Clearance=0.2
 TrackWidth=0.25
+ViaDiameter=0.6
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Switcher
+Clearance=0.2
+TrackWidth=0.75
 ViaDiameter=0.6
 ViaDrill=0.4
 uViaDiameter=0.3

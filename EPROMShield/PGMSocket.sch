@@ -81,10 +81,6 @@ Text Label 4600 4800 0    50   ~ 0
 A2
 Text Label 4600 4700 0    50   ~ 0
 A3
-Text Label 4600 4600 0    50   ~ 0
-A4
-Text Label 4600 4500 0    50   ~ 0
-A5
 Text Label 4600 4400 0    50   ~ 0
 A6
 Text Label 4600 4300 0    50   ~ 0
@@ -662,10 +658,6 @@ Text HLabel 4600 4300 0    50   Input ~ 0
 A7
 Text HLabel 4600 4400 0    50   Input ~ 0
 A6
-Text HLabel 4600 4500 0    50   Input ~ 0
-A5
-Text HLabel 4600 4600 0    50   Input ~ 0
-A4
 Text HLabel 4600 4700 0    50   Input ~ 0
 A3
 Text HLabel 4600 4800 0    50   Input ~ 0
@@ -737,23 +729,12 @@ Wire Wire Line
 Wire Wire Line
 	1250 950  1100 950 
 Connection ~ 1250 950 
-$Comp
-L power:GND #PWR0142
-U 1 1 612429D9
-P 1250 1350
-F 0 "#PWR0142" H 1250 1100 50  0001 C CNN
-F 1 "GND" H 1255 1177 50  0000 C CNN
-F 2 "" H 1250 1350 50  0001 C CNN
-F 3 "" H 1250 1350 50  0001 C CNN
-	1    1250 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1250 1300 1250 1350
 Wire Wire Line
 	1650 950  1750 950 
 Text HLabel 1100 950  0    50   BiDi ~ 0
-Q0
+PQ0
 $Comp
 L Diode:ZMMxx D8
 U 1 1 612429E3
@@ -799,7 +780,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 1700 1750 1700
 Text HLabel 1100 1700 0    50   BiDi ~ 0
-Q1
+PQ1
 $Comp
 L Diode:ZMMxx D9
 U 1 1 612429FD
@@ -845,7 +826,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 2450 1750 2450
 Text HLabel 1100 2450 0    50   BiDi ~ 0
-Q2
+PQ2
 $Comp
 L Diode:ZMMxx D10
 U 1 1 61242A17
@@ -891,7 +872,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 3200 1750 3200
 Text HLabel 1100 3200 0    50   BiDi ~ 0
-Q3
+PQ3
 $Comp
 L Diode:ZMMxx D11
 U 1 1 61242A31
@@ -937,7 +918,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 3950 1750 3950
 Text HLabel 1100 3950 0    50   BiDi ~ 0
-Q4
+PQ4
 $Comp
 L Diode:ZMMxx D12
 U 1 1 61242A4B
@@ -983,7 +964,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 4700 1750 4700
 Text HLabel 1100 4700 0    50   BiDi ~ 0
-Q5
+PQ5
 $Comp
 L Diode:ZMMxx D13
 U 1 1 61242A65
@@ -1029,7 +1010,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 5450 1750 5450
 Text HLabel 1100 5450 0    50   BiDi ~ 0
-Q6
+PQ6
 $Comp
 L Diode:ZMMxx D14
 U 1 1 61242A7F
@@ -1075,7 +1056,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 6200 1750 6200
 Text HLabel 1100 6200 0    50   BiDi ~ 0
-Q7
+PQ7
 Text Label 1750 950  2    50   ~ 0
 Q0
 Text Label 1750 1700 2    50   ~ 0
@@ -1103,4 +1084,23 @@ F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7600 3150 50  0001 C CNN
 	1    7600 3150
 	-1   0    0    1   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6128EAC7
+P 1250 1350
+F 0 "#PWR?" H 1250 1100 50  0001 C CNN
+F 1 "GND" H 1255 1177 50  0000 C CNN
+F 2 "" H 1250 1350 50  0001 C CNN
+F 3 "" H 1250 1350 50  0001 C CNN
+	1    1250 1350
+	1    0    0    -1  
+$EndComp
+Text HLabel 4600 4600 0    50   Input ~ 0
+A4
+Text HLabel 4600 4500 0    50   Input ~ 0
+A5
+Text Label 4600 4600 0    50   ~ 0
+A4
+Text Label 4600 4500 0    50   ~ 0
+A5
 $EndSCHEMATC
